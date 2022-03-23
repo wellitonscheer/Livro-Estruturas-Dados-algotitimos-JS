@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erança</title>
+    <script type="module" src="heranca-class.js" defer></script>
+    <script type="module" src="heranca.js" defer></script>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+    <div id="campos">
+        <div id="campo">
+            <span>Tipo Dev: </span> 
+            <select id="tipoDev" type="text" onchange="tipoDevFunc()"><br>
+                <option value="Frontend" selected>Frontend</option>
+                <option value="Backend">Backend</option>
+            </select>
+        </div>
+        <div id="campo">
+            <span>Nome: </span>
+            <input id="nome" type="text"></br>
+        </div>
+        <div id="campo">
+            <span>Idade: </span>
+            <input id="idade" type="number"><br>
+        </div>
+        <div id="campo">
+            <span>Principal Linguagem: </span>
+            <input id="princLingua" type="text"><br>
+        </div> 
+        <div id="campo">
+            <span id="devUsaText">Framework usado: </span><input id="devUsa" type="text">
+        </div>
+    </div>
+    <div>
+        <button onclick="tipoDev == 'Frontend' ?  DevFrontend() : DevBackend()">Criar Dev</button>
+    </div>
+</body>
+</html>
