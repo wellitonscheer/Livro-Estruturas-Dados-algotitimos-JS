@@ -39,6 +39,7 @@ window.DevBackend = function DevBackend(){
 }
 
 window.MostrarDevs = function MostrarDevs(){
+    DevsHTML.innerHTML = "";
     for(let i = 0; Devs.length > i; i++){
         DevsHTML.innerHTML += `Dev ${i + 1}</br>`;
         DevsHTML.innerHTML += `Nome: ${Devs[i].nome}</br>`;
