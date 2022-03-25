@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<br lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erança</title>
-    <script type="module" src="heranca-class.js" defer></script>
     <script type="module" src="heranca.js" defer></script>
     <link rel="stylesheet" href="../../style.css">
 </head>
@@ -34,7 +33,10 @@
         </div>
     </div>
     <div>
-        <button onclick="tipoDev == 'Frontend' ?  DevFrontend() : DevBackend()">Criar Dev</button>
+        <button onclick="tipoDev.value == 'Frontend' ?  DevFrontend() : DevBackend()">Criar Dev</button>
+        <button onclick="MostrarDevs()">Mostrar Devs</button>
     </div>
+    <div id="saudacao"></div></br></br>
+    <div id="Devs"></div>
 </body>
 </html>

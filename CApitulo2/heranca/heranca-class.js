@@ -1,15 +1,13 @@
-/* export {FrontendDev as Frontend,
-    BackendDev as Backend} */
-
-export class Dev{
+export default class Dev{
     constructor(nome, idade, principalLinguagem, tipoDev){
         this.nome = nome;
         this.idade = idade;
         this.principalLinguagem = principalLinguagem;
         this.tipoDev = tipoDev;
     }
-    saudacao(){
-        console.log(`Oi, sou dev ${this.tipoDev}, trabalho com ${this.principalLinguagem} e me chamo ${this.nome}.\n\n`);
+    saudacao(html){
+        /* console.log(`Oi, sou dev ${this.tipoDev}, trabalho com ${this.principalLinguagem} e me chamo ${this.nome}.\n\n`); */
+        html.innerHTML = `Oi, sou dev ${this.tipoDev}, trabalho com ${this.principalLinguagem} e me chamo ${this.nome}.\n\n`;
     }
 }
 
