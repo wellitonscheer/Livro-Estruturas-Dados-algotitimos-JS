@@ -24,11 +24,3 @@ export class BackendDev extends Dev{
         this.bancoDados = bancoDados;
     }
 }
-
-/* const FrontendDev1 = new FrontendDev("Pedro", "25", "JavaScript", "Frontend", "React");
-console.log(FrontendDev1);
-FrontendDev1.saudacao();
-
-const BackendDev1 = new BackendDev("João", "37", "C#", "Backend", "MySQL");
-console.log(BackendDev1);
-BackendDev1.saudacao(); */
